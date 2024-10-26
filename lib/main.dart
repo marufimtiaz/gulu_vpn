@@ -25,14 +25,24 @@ class MyApp extends StatelessWidget {
           seedColor: Colors.teal,
           brightness: Brightness.light,
         ),
-        appBarTheme: const AppBarTheme(centerTitle: true, elevation: 3),
+        scaffoldBackgroundColor: Colors.teal.shade100,
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          elevation: 3,
+          backgroundColor: Colors.teal,
+        ),
       ),
       darkTheme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.teal,
           brightness: Brightness.dark,
         ),
-        appBarTheme: const AppBarTheme(centerTitle: true, elevation: 3),
+        scaffoldBackgroundColor: Colors.teal.shade900,
+        appBarTheme: AppBarTheme(
+          centerTitle: true,
+          elevation: 3,
+          backgroundColor: Colors.teal.shade700,
+        ),
       ),
       themeMode: AppPreferences.isModeDark ? ThemeMode.dark : ThemeMode.light,
       debugShowCheckedModeBanner: false,
